@@ -1,0 +1,32 @@
+command_id: DA28.224A7C|fc=1,c=14
+test_cases:
+- expected_values:
+    GMC_BP: 0
+  response: 142AF12804624A7C0A
+- expected_values:
+    GMC_BP: 200
+  response: 142AF12804624A7C0C
+- expected_values:
+    GMC_BP: 500
+  response: 142AF12804624A7C0F
+- expected_values:
+    GMC_BP: 600
+  response: 142AF12804624A7C10
+- expected_values:
+    GMC_BP: 800
+  response: 142AF12804624A7C12
+- expected_values:
+    GMC_BP: 2500
+  response: 142AF12804624A7C23
+- expected_values:
+    GMC_BP: 2800
+  response: 142AF12804624A7C26
+- expected_values:
+    GMC_BP: 3100
+  response: 142AF12804624A7C29
+- expected_values:
+    GMC_BP: 3200
+  response: 142AF12804624A7C2A
+- expected_values:
+    GMC_BP: 4800
+  response: 142AF12804624A7C3A
