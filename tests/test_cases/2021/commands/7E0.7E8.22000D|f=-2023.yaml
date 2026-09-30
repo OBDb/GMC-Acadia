@@ -1,14 +1,14 @@
-command_id: 7E0.7E8.22000D
+command_id: 7E0.7E8.22000D|f=-2023
 test_cases:
 - expected_values:
-    GMC_VSS: 0
+    ACADIA_VSS: 0
   response: 7E80462000D00
 - expected_values:
-    GMC_VSS: 19
+    ACADIA_VSS: 19
   response: 7E80462000D13
 - expected_values:
-    GMC_VSS: 35
+    ACADIA_VSS: 35
   response: 7E80462000D23
 - expected_values:
-    GMC_VSS: 45
+    ACADIA_VSS: 45
   response: 7E80462000D2D
