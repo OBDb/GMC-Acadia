@@ -1,11 +1,11 @@
-command_id: 7E0.2211A1
+command_id: 7E0.2211A1|f=-2023
 test_cases:
 - expected_values:
-    GMC_RUNTM: 0
+    ACADIA_RUNTM: 0
   response: 7E8056211A10000
 - expected_values:
-    GMC_RUNTM: 255
+    ACADIA_RUNTM: 255
   response: 7E8056211A100FF
 - expected_values:
-    GMC_RUNTM: 7193
+    ACADIA_RUNTM: 7193
   response: 7E8056211A11C19

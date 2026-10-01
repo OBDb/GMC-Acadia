@@ -1,29 +1,29 @@
-command_id: 7E0.2211A1
+command_id: 7E0.2211A1|f=-2023
 test_cases:
 - expected_values:
-    GMC_RUNTM: 0
+    ACADIA_RUNTM: 0
   response: 7E8056211A10000
 - expected_values:
-    GMC_RUNTM: 99
+    ACADIA_RUNTM: 99
   response: 7E8056211A10063
 - expected_values:
-    GMC_RUNTM: 118
+    ACADIA_RUNTM: 118
   response: 7E8056211A10076
 - expected_values:
-    GMC_RUNTM: 123
+    ACADIA_RUNTM: 123
   response: 7E8056211A1007B
 - expected_values:
-    GMC_RUNTM: 167
+    ACADIA_RUNTM: 167
   response: 7E8056211A100A7
 - expected_values:
-    GMC_RUNTM: 308
+    ACADIA_RUNTM: 308
   response: 7E8056211A10134
 - expected_values:
-    GMC_RUNTM: 409
+    ACADIA_RUNTM: 409
   response: 7E8056211A10199
 - expected_values:
-    GMC_RUNTM: 1225
+    ACADIA_RUNTM: 1225
   response: 7E8056211A104C9
 - expected_values:
-    GMC_RUNTM: 1228
+    ACADIA_RUNTM: 1228
   response: 7E8056211A104CC

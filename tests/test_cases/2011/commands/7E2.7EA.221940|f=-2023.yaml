@@ -1,14 +1,17 @@
-command_id: 7E2.7EA.221940
+command_id: 7E2.7EA.221940|f=-2023
 test_cases:
 - expected_values:
-    GMC_ATF_T: 90
+    ACADIA_ATF_T: 89
+  response: 7EA0462194081
+- expected_values:
+    ACADIA_ATF_T: 90
   response: 7EA0462194082
 - expected_values:
-    GMC_ATF_T: 92
+    ACADIA_ATF_T: 92
   response: 7EA0462194084
 - expected_values:
-    GMC_ATF_T: 94
+    ACADIA_ATF_T: 94
   response: 7EA0462194086
 - expected_values:
-    GMC_ATF_T: 95
+    ACADIA_ATF_T: 95
   response: 7EA0462194087
