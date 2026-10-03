@@ -7,11 +7,5 @@ test_cases:
     ACADIA_FLI: 18.82353
   response: 7E80462002F30
 - expected_values:
-    ACADIA_FLI: 25.88235
-  response: 7E80462002F42
-- expected_values:
-    ACADIA_FLI: 41.56863
-  response: 7E80462002F6A
-- expected_values:
     ACADIA_FLI: 100
   response: 7E80462002FFF
