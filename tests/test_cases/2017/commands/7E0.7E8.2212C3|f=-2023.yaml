@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2212C3|f=-2023
+test_cases:
+- expected_values:
+    ACADIA_INJECTOR_DUTY_CYCLE_BANK_1: 1.11
+  response: '7E8 05 62 12 C3 00 4A '
+- expected_values:
+    ACADIA_INJECTOR_DUTY_CYCLE_BANK_1: 1.185
+  response: 7E8056212C3004F

@@ -4,5 +4,5 @@ test_cases:
     ACADIA_VSS: 0
   response: 7E80462000D00
 - expected_values:
-    ACADIA_VSS: 125
-  response: 7E80462000D7D
+    ACADIA_VSS: null
+  response: 7E80462000DFF

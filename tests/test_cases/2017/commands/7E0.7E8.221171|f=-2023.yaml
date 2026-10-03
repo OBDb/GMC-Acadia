@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.221171|f=-2023
+test_cases:
+- expected_values:
+    ACADIA_EGR_DUTY: 0
+  response: '7E8 04 62 11 71 00 '
+- expected_values:
+    ACADIA_EGR_DUTY: 0
+  response: '7E80462117100'

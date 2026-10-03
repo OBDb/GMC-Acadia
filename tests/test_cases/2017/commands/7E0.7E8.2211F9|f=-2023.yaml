@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2211F9|f=-2023
+test_cases:
+- expected_values:
+    ACADIA_MIS_HISTORY_6: 0
+  response: '7E8 05 62 11 F9 00 00 '
+- expected_values:
+    ACADIA_MIS_HISTORY_6: 0
+  response: 7E8056211F90000

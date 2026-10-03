@@ -1,4 +1,8 @@
-{ "commands": [
+{ "ecu": [
+    { "hdr": "7E0", "type": "engine" },
+    { "hdr": "7E2", "type": "transmission" }
+  ],
+  "commands": [
 { "hdr": "241", "rax": "641", "dbg": true, "cmd": {"22": "4005"}, "freq": 3600, "filter": { "to": 2023 },
   "signals": [
     {"id": "ACADIA_TID_FL", "path": "Tires", "fmt": { "len": 32, "max": 4294967295, "unit": "hex" }, "name": "Front left tire sensor ID"}
@@ -11,7 +15,7 @@
   "signals": [
     {"id": "ACADIA_TID_RR", "path": "Tires", "fmt": { "len": 32, "max": 4294967295, "unit": "hex" }, "name": "Rear right tire sensor ID"}
   ]},
-{ "hdr": "241", "rax": "641", "dbg": true, "cmd": {"22": "4008"}, "freq": 3600, "filter": { "to": 2023 },
+{ "hdr": "241", "rax": "641", "cmd": {"22": "4008"}, "freq": 3600, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_TID_RL", "path": "Tires", "fmt": { "len": 32, "max": 4294967295, "unit": "hex" }, "name": "Rear left tire sensor ID"}
   ]},
@@ -27,35 +31,35 @@
   "signals": [
     {"id": "ACADIA_TP_RR", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "unit": "kilopascal" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"}
   ]},
-{ "hdr": "241", "rax": "641", "dbg": true, "cmd": {"22": "5008"}, "freq": 15, "filter": { "to": 2023 },
+{ "hdr": "241", "rax": "641", "cmd": {"22": "5008"}, "freq": 15, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_TP_RL", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "unit": "kilopascal" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"}
   ]},
-{ "hdr": "7E0", "cmd": {"22": "11A1"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "years": [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2022] },
+{ "hdr": "7E0", "cmd": {"22": "11A1"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "years": [2012, 2013, 2014, 2015, 2016, 2018, 2022] },
   "signals": [
     {"id": "ACADIA_RUNTM", "path": "Clocks", "fmt": { "len": 16, "max": 65535, "unit": "seconds" }, "name": "Time since engine start"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "000D"}, "freq": 0.25, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "years": [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2022] },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "000D"}, "freq": 0.25, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "years": [2012, 2013, 2014, 2015, 2016, 2018, 2022] },
   "signals": [
     {"id": "ACADIA_VSS", "path": "Movement", "fmt": { "len": 8, "max": 255, "nullmax": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "0010"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "cmd": {"22": "0010"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_MAF", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "mul": 100, "div": 10000, "unit": "gramsPerSecond" }, "name": "Mass airflow sensor"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "002F"}, "freq": 30, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "cmd": {"22": "002F"}, "freq": 30, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Fuel remaining", "suggestedMetric": "fuelTankLevel"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0042"}, "freq": 5, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0042"}, "freq": 5, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_M_CTRL_MODULE_V", "path": "Battery", "fmt": { "len": 16, "max": 65.53, "div": 1000, "unit": "volts" }, "name": "Control module voltage"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0052"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0052"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_ETHANOL_CONTENT_FUEL", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Ethanol content of fuel"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "005C"}, "freq": 5, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "cmd": {"22": "005C"}, "freq": 5, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_EOT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature", "suggestedMetric": "engineOilTemperature"}
   ]},
@@ -67,11 +71,11 @@
   "signals": [
     {"id": "ACADIA_TOTAL_FUEL_CONSUMPTION_RATE", "path": "Fuel", "fmt": { "len": 16, "max": 1310.7, "mul": 200, "div": 10000, "unit": "gramsPerSecond" }, "name": "Total fuel consumption rate"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1141"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1141"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_IGN_1_V", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Ignition 1 voltage"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1145"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1145"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_HEATED_OXYGEN_SENS", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "millivolts" }, "name": "Heated oxygen sensor"}
   ]},
@@ -79,11 +83,11 @@
   "signals": [
     {"id": "ACADIA_EGR_V", "path": "Engine", "fmt": { "len": 8, "max": 5, "div": 51, "unit": "volts" }, "name": "Exhaust gas recirculation voltage"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1154"}, "freq": 5, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "from": 2012 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1154"}, "freq": 5, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "years": [2012, 2013, 2014, 2015, 2016], "from": 2018 },
   "signals": [
     {"id": "ACADIA_EOT_CALC", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Calculated engine oil temperature", "suggestedMetric": "engineOilTemperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "115C"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "115C"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_EOP_2", "path": "Engine", "fmt": { "len": 8, "max": 131.39, "min": -21.6, "mul": 3, "div": 5, "add": -21.6, "nullmax": 131.39, "unit": "psi" }, "name": "Engine oil pressure 2", "description": "Reads 0 psi at the sensor's zero-pressure floor, raw 36; the 0.6 psi slope is not yet checked against a gauge."}
   ]},
@@ -95,7 +99,7 @@
   "signals": [
     {"id": "ACADIA_EVAPORATIVE", "path": "Engine", "fmt": { "len": 8, "max": 100, "div": 2.55, "unit": "percent" }, "name": "Evaporative emissions purge"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1171"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1171"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_EGR_DUTY", "path": "Engine", "fmt": { "len": 8, "max": 100, "div": 2.55, "unit": "percent" }, "name": "Exhaust gas recirculation duty cycle"}
   ]},
@@ -139,59 +143,59 @@
   "signals": [
     {"id": "ACADIA_REMAINING_OIL_LIFE", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "percent" }, "name": "Remaining oil life"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11A6"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "from": 2012 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11A6"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "years": [2012, 2013, 2014, 2015, 2016], "from": 2018 },
   "signals": [
     {"id": "ACADIA_KNOCK_RETARD", "path": "Engine", "fmt": { "len": 8, "max": 56.1, "mul": 22, "div": 100, "unit": "degrees" }, "name": "Knock retard"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11EA"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "from": 2012 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11EA"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "years": [2012, 2013, 2014, 2015, 2016], "from": 2018 },
   "signals": [
     {"id": "ACADIA_MISFIRES_C5_CUR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfires, current, cylinder 5"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11EB"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "from": 2012 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11EB"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "years": [2012, 2013, 2014, 2015, 2016], "from": 2018 },
   "signals": [
     {"id": "ACADIA_MISFIRES_C6_CUR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfires, current, cylinder 6"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11F8"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11F8"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_MIS_HISTORY_5", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 5"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11F9"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11F9"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_MIS_HISTORY_6", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 6"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1200"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "from": 2012 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1200"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "years": [2012, 2013, 2014, 2015, 2016], "from": 2018 },
   "signals": [
     {"id": "ACADIA_TOTAL_MISFIRE", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Total misfire"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1201"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1201"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_MIS_HISTORY_1", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1202"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1202"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_MIS_HISTORY_2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 2"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1203"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1203"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_MIS_HISTORY_3", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 3"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1204"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1204"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_MIS_HISTORY_4", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1205"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "from": 2012 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1205"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "years": [2012, 2013, 2014, 2015, 2016], "from": 2018 },
   "signals": [
     {"id": "ACADIA_MISFIRES_C2_CUR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfires, current, cylinder 2"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1206"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "from": 2012 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1206"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "years": [2012, 2013, 2014, 2015, 2016], "from": 2018 },
   "signals": [
     {"id": "ACADIA_MISFIRES_C1_CUR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfires, current, cylinder 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1207"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "from": 2012 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1207"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "years": [2012, 2013, 2014, 2015, 2016], "from": 2018 },
   "signals": [
     {"id": "ACADIA_MISFIRES_C3_CUR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfires, current, cylinder 3"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1208"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "from": 2012 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1208"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "years": [2012, 2013, 2014, 2015, 2016], "from": 2018 },
   "signals": [
     {"id": "ACADIA_MISFIRES_C4_CUR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfires, current, cylinder 4"}
   ]},
@@ -207,23 +211,23 @@
   "signals": [
     {"id": "ACADIA_KNOCK_SENS_ACTIVE", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Knock sensor active counter"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "12C3"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "12C3"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_INJECTOR_DUTY_CYCLE_BANK_1", "path": "Engine", "fmt": { "len": 16, "max": 983.025, "mul": 150, "div": 10000, "unit": "milliseconds" }, "name": "Injector duty cycle bank 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "12C4"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "12C4"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_INJECTOR_DUTY_CYCLE_BANK_2", "path": "Engine", "fmt": { "len": 16, "max": 983.025, "mul": 150, "div": 10000, "unit": "milliseconds" }, "name": "Injector duty cycle bank 2"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "12D9"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "from": 2012 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "12D9"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "years": [2012, 2013, 2014, 2015, 2016], "from": 2018 },
   "signals": [
     {"id": "ACADIA_TOTAL_KNOCK_RETARD", "path": "Engine", "fmt": { "len": 8, "max": 114.75, "mul": 45, "div": 100, "unit": "degrees" }, "name": "Total knock retard"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "13AF"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "from": 2012 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "13AF"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "years": [2012, 2013, 2014, 2015, 2016], "from": 2018 },
   "signals": [
     {"id": "ACADIA_COOLING_FAN_MOTOR_CMD", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Cooling fan motor command"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "1470"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "cmd": {"22": "1470"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_EOP_DA11", "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 400, "div": 100, "unit": "kilopascal" }, "name": "Engine oil pressure"}
   ]},
@@ -231,19 +235,19 @@
   "signals": [
     {"id": "ACADIA_IAT_2", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake air temperature 2"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "153E"}, "freq": 5, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "cmd": {"22": "153E"}, "freq": 5, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_EOT_DA11", "path": "Engine", "fmt": { "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1564"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1564"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_AC_HIGH_SIDE_P", "path": "Engine", "fmt": { "len": 8, "max": 515.1, "mul": 2.02, "unit": "psi" }, "name": "Air conditioning high side pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1940"}, "freq": 5, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1940"}, "freq": 5, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_ATF_T_VAR_1", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1991"}, "freq": 0.25, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1991"}, "freq": 0.25, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_TQ_CONV_CLU_SLIP_SPD", "path": "Movement", "fmt": { "len": 16, "max": 4095.875, "min": -4096, "div": 8, "sign": true, "unit": "rpm" }, "name": "Torque converter clutch slip speed"}
   ]},
@@ -291,7 +295,7 @@
   "signals": [
     {"id": "ACADIA_ENG_TQ", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "newtonMeters" }, "name": "Engine torque"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1C1B"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1C1B"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_EOP_CALC", "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 400, "div": 100, "unit": "kilopascal" }, "name": "Calculated engine oil pressure"}
   ]},
@@ -307,15 +311,15 @@
   "signals": [
     {"id": "ACADIA_FUEL_INJECTION_C1", "path": "Fuel", "fmt": { "len": 16, "max": 65.535, "mul": 10, "div": 10000, "unit": "milliseconds" }, "name": "Fuel injection, cylinder 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "20E3"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "cmd": {"22": "20E3"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_BP_ACT", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "mul": 100, "div": 10000, "unit": "kilopascal" }, "name": "Boost pressure: actual"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2344"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "2344"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_EOP_ABS", "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 400, "div": 100, "unit": "kilopascal" }, "name": "Engine oil absolute pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2345"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "2345"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_EOP", "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 400, "div": 100, "unit": "kilopascal" }, "name": "Engine oil pressure"}
   ]},
@@ -343,7 +347,7 @@
   "signals": [
     {"id": "ACADIA_CHARGE_AIR_COOLER_T_SNS_2", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Charge air cooler temperature sensor 2"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "3201"}, "freq": 0.25, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "3201"}, "freq": 0.25, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_CURRENT_GEAR_VAR_3", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear, variant 3"}
   ]},
@@ -351,11 +355,11 @@
   "signals": [
     {"id": "ACADIA_FUEL_T", "path": "Fuel", "fmt": { "len": 8, "max": 127.5, "mul": 50, "div": 100, "unit": "celsius" }, "name": "Fuel temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "328A"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "cmd": {"22": "328A"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_BP_DES", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "mul": 100, "div": 10000, "unit": "kilopascal" }, "name": "Boost pressure: desired"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "3318"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "3318"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_EOP_CTRL_SOLENOID_VALVE_CMD", "path": "Engine", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Engine oil pressure control solenoid valve command"}
   ]},
@@ -383,19 +387,19 @@
   "signals": [
     {"id": "ACADIA_ATF_T_VAR_8", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 8"}
   ]},
-{ "hdr": "7E2", "rax": "7EA", "cmd": {"22": "1940"}, "freq": 5, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "from": 2012 },
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"22": "1940"}, "freq": 5, "filter": { "to": 2023 }, "dbgfilter": { "to": 2010, "years": [2012, 2013, 2014, 2015, 2016], "from": 2018 },
   "signals": [
     {"id": "ACADIA_ATF_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"}
   ]},
-{ "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "1941"}, "freq": 1, "filter": { "to": 2023 },
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"22": "1941"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_TRANS_ISS", "path": "Transmission", "fmt": { "len": 16, "max": 8191, "min": -8192, "div": 4, "sign": true, "unit": "rpm" }, "name": "Transmission input shaft speed, 2"}
   ]},
-{ "hdr": "7E2", "rax": "7EA", "fcm1": true, "dbg": true, "cmd": {"22": "1991"}, "freq": 0.25, "filter": { "to": 2023 },
+{ "hdr": "7E2", "rax": "7EA", "fcm1": true, "cmd": {"22": "1991"}, "freq": 0.25, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_TC_SLIP_VSS", "path": "Movement", "fmt": { "len": 16, "max": 4095.875, "min": -4096, "mul": 1250, "div": 10000, "sign": true, "unit": "rpm" }, "name": "Torque converter clutch slip speed"}
   ]},
-{ "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "199A"}, "freq": 0.25, "filter": { "to": 2023 },
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"22": "199A"}, "freq": 0.25, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_CURRENT_GEAR_VAR_2", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear, variant 2"}
   ]},
@@ -407,7 +411,7 @@
   "signals": [
     {"id": "ACADIA_CURRENT_GEAR", "path": "Transmission", "fmt": { "len": 8, "max": 252, "min": -3, "add": -3, "unit": "scalar" }, "name": "Current gear"}
   ]},
-{ "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "280D"}, "freq": 5, "filter": { "to": 2023 },
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"22": "280D"}, "freq": 5, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ACADIA_ATF_T_VAR_6", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 6"}
   ]},

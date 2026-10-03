@@ -1,0 +1,23 @@
+command_id: 7E0.2211A1|f=-2023
+test_cases:
+- expected_values:
+    ACADIA_RUNTM: 605
+  response: '7E8 05 62 11 A1 02 5D '
+- expected_values:
+    ACADIA_RUNTM: 881
+  response: '7E8 05 62 11 A1 03 71 '
+- expected_values:
+    ACADIA_RUNTM: 654
+  response: 7E8056211A1028E
+- expected_values:
+    ACADIA_RUNTM: 736
+  response: 7E8056211A102E0
+- expected_values:
+    ACADIA_RUNTM: 782
+  response: 7E8056211A1030E
+- expected_values:
+    ACADIA_RUNTM: 817
+  response: 7E8056211A10331
+- expected_values:
+    ACADIA_RUNTM: 847
+  response: 7E8056211A1034F
