@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.220010|fc=1,f=-2023
+test_cases:
+- expected_values:
+    ACADIA_MAF: 5.8
+  response: '7E8056200100244'
+- expected_values:
+    ACADIA_MAF: 5.83
+  response: '7E8056200100247'
+- expected_values:
+    ACADIA_MAF: 5.87
+  response: 7E805620010024B

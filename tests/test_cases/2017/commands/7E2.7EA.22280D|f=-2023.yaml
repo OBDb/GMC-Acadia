@@ -1,0 +1,5 @@
+command_id: 7E2.7EA.22280D|f=-2023
+test_cases:
+- expected_values:
+    ACADIA_ATF_T_VAR_6: 66
+  response: '7EA 04 62 28 0D 6A '

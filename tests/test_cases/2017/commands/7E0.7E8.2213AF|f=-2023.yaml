@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2213AF|f=-2023
+test_cases:
+- expected_values:
+    ACADIA_COOLING_FAN_MOTOR_CMD: 45.4902
+  response: '7E8 04 62 13 AF 74 '
+- expected_values:
+    ACADIA_COOLING_FAN_MOTOR_CMD: 48.23529
+  response: 7E8046213AF7B

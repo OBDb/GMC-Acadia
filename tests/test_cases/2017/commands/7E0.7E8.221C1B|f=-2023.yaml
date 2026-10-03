@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.221C1B|f=-2023
+test_cases:
+- expected_values:
+    ACADIA_EOP_CALC: 240
+  response: '7E8 04 62 1C 1B 3C '
+- expected_values:
+    ACADIA_EOP_CALC: 244
+  response: '7E8 04 62 1C 1B 3D '
+- expected_values:
+    ACADIA_EOP_CALC: 232
+  response: 7E804621C1B3A
+- expected_values:
+    ACADIA_EOP_CALC: 236
+  response: 7E804621C1B3B

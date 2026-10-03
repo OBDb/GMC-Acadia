@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.22328A|fc=1,f=-2023
+test_cases:
+- expected_values:
+    ACADIA_BP_DES: 0
+  response: '7E8 05 62 32 8A 00 00 '
+- expected_values:
+    ACADIA_BP_DES: 0
+  response: 7E80562328A0000

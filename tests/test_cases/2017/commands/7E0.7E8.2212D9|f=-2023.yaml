@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2212D9|f=-2023
+test_cases:
+- expected_values:
+    ACADIA_TOTAL_KNOCK_RETARD: 0
+  response: '7E8 04 62 12 D9 00 '
+- expected_values:
+    ACADIA_TOTAL_KNOCK_RETARD: 0
+  response: 7E8046212D900

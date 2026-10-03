@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.22005C|fc=1,f=-2023
+test_cases:
+- expected_values:
+    ACADIA_EOT: 82
+  response: '7E8 04 62 00 5C 7A '
+- expected_values:
+    ACADIA_EOT: 83
+  response: 7E80462005C7B
+- expected_values:
+    ACADIA_EOT: 86
+  response: 7E80462005C7E

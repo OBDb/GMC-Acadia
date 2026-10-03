@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.221145|f=-2023
+test_cases:
+- expected_values:
+    ACADIA_HEATED_OXYGEN_SENS: 167
+  response: '7E8 04 62 11 45 A7 '
+- expected_values:
+    ACADIA_HEATED_OXYGEN_SENS: 27
+  response: 7E8046211451B
+- expected_values:
+    ACADIA_HEATED_OXYGEN_SENS: 42
+  response: 7E8046211452A
+- expected_values:
+    ACADIA_HEATED_OXYGEN_SENS: 188
+  response: 7E804621145BC

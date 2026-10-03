@@ -1,0 +1,11 @@
+command_id: 7E2.7EA.221991|fc=1,f=-2023
+test_cases:
+- expected_values:
+    ACADIA_TC_SLIP_VSS: 30.75
+  response: '7EA 05 62 19 91 00 F6 '
+- expected_values:
+    ACADIA_TC_SLIP_VSS: 31.625
+  response: '7EA 05 62 19 91 00 FD '
+- expected_values:
+    ACADIA_TC_SLIP_VSS: 26.75
+  response: 7EA0562199100D6
