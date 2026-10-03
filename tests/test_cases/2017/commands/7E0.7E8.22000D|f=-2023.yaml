@@ -21,3 +21,6 @@ test_cases:
 - expected_values:
     ACADIA_VSS: 68
   response: 7E80462000D44
+- expected_values:
+    ACADIA_VSS: null
+  response: 7E80462000DFF

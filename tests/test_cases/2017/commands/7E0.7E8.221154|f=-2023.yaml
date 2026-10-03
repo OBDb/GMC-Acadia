@@ -27,3 +27,6 @@ test_cases:
 - expected_values:
     ACADIA_EOT_CALC: 86
   response: 7E8046211547E
+- expected_values:
+    ACADIA_EOT_CALC: 89
+  response: '7E80462115481'

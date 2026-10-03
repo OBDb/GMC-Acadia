@@ -9,3 +9,6 @@ test_cases:
 - expected_values:
     ACADIA_EOT: 86
   response: 7E80462005C7E
+- expected_values:
+    ACADIA_EOT: 89
+  response: 7E80462005C81
