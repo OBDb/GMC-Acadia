@@ -9,3 +9,15 @@ test_cases:
 - expected_values:
     ACADIA_VSS: 0
   response: 7E80462000D00
+- expected_values:
+    ACADIA_VSS: 47
+  response: 7E80462000D2F
+- expected_values:
+    ACADIA_VSS: 54
+  response: 7E80462000D36
+- expected_values:
+    ACADIA_VSS: 62
+  response: 7E80462000D3E
+- expected_values:
+    ACADIA_VSS: 68
+  response: 7E80462000D44

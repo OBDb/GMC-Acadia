@@ -1,0 +1,5 @@
+command_id: 241.641.225007|f=-2023
+test_cases:
+- expected_values:
+    ACADIA_TP_RR: 220
+  response: 641056250070DC0
