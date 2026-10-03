@@ -6,3 +6,21 @@ test_cases:
 - expected_values:
     ACADIA_ATF_T: 61
   response: '7EA 04 62 19 40 65 '
+- expected_values:
+    ACADIA_ATF_T: 31
+  response: 7EA0462194047
+- expected_values:
+    ACADIA_ATF_T: 33
+  response: 7EA0462194049
+- expected_values:
+    ACADIA_ATF_T: 35
+  response: 7EA046219404B
+- expected_values:
+    ACADIA_ATF_T: 36
+  response: 7EA046219404C
+- expected_values:
+    ACADIA_ATF_T: 37
+  response: 7EA046219404D
+- expected_values:
+    ACADIA_ATF_T: 62
+  response: 7EA0462194066
