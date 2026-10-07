@@ -7,5 +7,5 @@ test_cases:
     ACADIA_EOT: 26
   response: 7E80462005C42
 - expected_values:
-    ACADIA_EOT: 95
-  response: 7E80462005C87
+    ACADIA_EOT: 96
+  response: 7E80462005C88
