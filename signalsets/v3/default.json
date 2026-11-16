@@ -313,7 +313,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "cmd": {"22": "20E3"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
-    {"id": "ACADIA_BP_ACT", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "mul": 100, "div": 10000, "unit": "kilopascal" }, "name": "Boost pressure: actual"}
+    {"id": "ACADIA_BP_ACT", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "mul": 100, "div": 10000, "unit": "kilopascal" }, "name": "Boost pressure: actual", "suggestedMetric": "boostPressure"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "2344"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
@@ -446,13 +446,13 @@
   "signals": [
     {"id": "ACADIA_STEER_ANGLE", "path": "Control", "fmt": { "len": 16, "max": 720.874, "min": -720.896, "mul": 220, "div": 10000, "sign": true, "unit": "degrees" }, "name": "Steering wheel angle"}
   ]},
-{ "hdr": "DA28", "rax": "2AF128", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "4C2F"}, "freq": 0.1, "filter": { "from": 2024 },
+{ "hdr": "DA28", "rax": "2AF128", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "4C2F"}, "freq": 0.25, "filter": { "from": 2024 },
   "signals": [
-    {"id": "ACADIA_LAT_G", "path": "Orientation", "fmt": { "len": 16, "max": 52, "min": -52, "mul": 15.92796725, "div": 10000, "sign": true, "unit": "gravity" }, "name": "Lateral acceleration"}
+    {"id": "ACADIA_LAT_G", "path": "Orientation", "fmt": { "len": 16, "max": 52, "min": -52, "mul": 15.92796725, "div": 10000, "sign": true, "unit": "gravity" }, "name": "Lateral acceleration", "suggestedMetric": "lateralAcceleration"}
   ]},
-{ "hdr": "DA28", "rax": "2AF128", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "4C30"}, "freq": 0.1, "filter": { "from": 2024 },
+{ "hdr": "DA28", "rax": "2AF128", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "4C30"}, "freq": 0.25, "filter": { "from": 2024 },
   "signals": [
-    {"id": "ACADIA_LNG_G", "path": "Orientation", "fmt": { "len": 16, "max": 52, "min": -52, "mul": 15.92796725, "div": 10000, "sign": true, "unit": "gravity" }, "name": "Longitudinal acceleration"}
+    {"id": "ACADIA_LNG_G", "path": "Orientation", "fmt": { "len": 16, "max": 52, "min": -52, "mul": 15.92796725, "div": 10000, "sign": true, "unit": "gravity" }, "name": "Longitudinal acceleration", "suggestedMetric": "longitudinalAcceleration"}
   ]},
 { "hdr": "DA40", "rax": "40", "dbg": true, "cmd": {"22": "4005"}, "freq": 3600, "filter": { "from": 2024 },
   "signals": [
