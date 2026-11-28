@@ -1,0 +1,5 @@
+command_id: 241.641.224006|f=-2023
+test_cases:
+- expected_values:
+    ACADIA_TID_FR: 2147530735
+  response: 641076240068000B7EF

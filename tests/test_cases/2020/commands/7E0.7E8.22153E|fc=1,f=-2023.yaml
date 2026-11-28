@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.22153E|fc=1,f=-2023
+test_cases:
+- expected_values:
+    ACADIA_EOT_DA11: 60
+  response: 7E80462153E64
+- expected_values:
+    ACADIA_EOT_DA11: 61
+  response: 7E80462153E65
+- expected_values:
+    ACADIA_EOT_DA11: 62
+  response: 7E80462153E66

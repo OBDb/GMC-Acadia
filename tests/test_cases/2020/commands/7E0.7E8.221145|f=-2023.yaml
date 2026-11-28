@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.221145|f=-2023
+test_cases:
+- expected_values:
+    ACADIA_HEATED_OXYGEN_SENS: 0
+  response: '7E80462114500'

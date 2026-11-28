@@ -1,0 +1,11 @@
+command_id: 7E2.7EA.221940|f=-2023
+test_cases:
+- expected_values:
+    ACADIA_ATF_T: 64
+  response: 7EA0462194068
+- expected_values:
+    ACADIA_ATF_T: 65
+  response: 7EA0462194069
+- expected_values:
+    ACADIA_ATF_T: 66
+  response: 7EA046219406A

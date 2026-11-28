@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.22115C|f=-2023
+test_cases:
+- expected_values:
+    ACADIA_EOP_2: -0.6
+  response: 7E80462115C23
+- expected_values:
+    ACADIA_EOP_2: 22.2
+  response: 7E80462115C49
+- expected_values:
+    ACADIA_EOP_2: 28.8
+  response: 7E80462115C54

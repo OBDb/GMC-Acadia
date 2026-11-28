@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.222344|f=-2023
+test_cases:
+- expected_values:
+    ACADIA_EOP_ABS: 92
+  response: '7E80462234417'
+- expected_values:
+    ACADIA_EOP_ABS: 260
+  response: '7E80462234441'
+- expected_values:
+    ACADIA_EOP_ABS: 288
+  response: '7E80462234448'
