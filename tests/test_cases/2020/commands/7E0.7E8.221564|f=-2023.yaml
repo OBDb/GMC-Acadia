@@ -1,11 +1,8 @@
 command_id: 7E0.7E8.221564|f=-2023
 test_cases:
 - expected_values:
-    ACADIA_AC_HIGH_SIDE_P: 80.8
-  response: '7E80462156428'
+    ACADIA_AC_HIGH_SIDE_P: 72.72
+  response: '7E80462156424'
 - expected_values:
-    ACADIA_AC_HIGH_SIDE_P: 82.82
-  response: '7E80462156429'
-- expected_values:
-    ACADIA_AC_HIGH_SIDE_P: 84.84
-  response: 7E8046215642A
+    ACADIA_AC_HIGH_SIDE_P: 105.04
+  response: '7E80462156434'

@@ -3,3 +3,15 @@ test_cases:
 - expected_values:
     ACADIA_CURRENT_GEAR_VAR_3: 0
   response: '7E80462320100'
+- expected_values:
+    ACADIA_CURRENT_GEAR_VAR_3: 1
+  response: '7E80462320101'
+- expected_values:
+    ACADIA_CURRENT_GEAR_VAR_3: 2
+  response: '7E80462320102'
+- expected_values:
+    ACADIA_CURRENT_GEAR_VAR_3: 4
+  response: '7E80462320104'
+- expected_values:
+    ACADIA_CURRENT_GEAR_VAR_3: 6
+  response: '7E80462320106'

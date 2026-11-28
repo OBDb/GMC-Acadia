@@ -3,3 +3,24 @@ test_cases:
 - expected_values:
     ODO: 181212.1
   response: 7E80641A6001BA699
+- expected_values:
+    ODO: 181230.2
+  response: 7E80641A6001BA74E
+- expected_values:
+    ODO: 181230.5
+  response: 7E80641A6001BA751
+- expected_values:
+    ODO: 181230.8
+  response: 7E80641A6001BA754
+- expected_values:
+    ODO: 181231
+  response: 7E80641A6001BA756
+- expected_values:
+    ODO: 181231.2
+  response: 7E80641A6001BA758
+- expected_values:
+    ODO: 181231.5
+  response: 7E80641A6001BA75B
+- expected_values:
+    ODO: 181231.6
+  response: 7E80641A6001BA75C

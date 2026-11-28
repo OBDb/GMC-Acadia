@@ -9,3 +9,21 @@ test_cases:
 - expected_values:
     ACADIA_TF_T_FLTED: 66
   response: 7EA0462295A6A
+- expected_values:
+    ACADIA_TF_T_FLTED: 77
+  response: 7EA0462295A75
+- expected_values:
+    ACADIA_TF_T_FLTED: 81
+  response: 7EA0462295A79
+- expected_values:
+    ACADIA_TF_T_FLTED: 84
+  response: 7EA0462295A7C
+- expected_values:
+    ACADIA_TF_T_FLTED: 85
+  response: 7EA0462295A7D
+- expected_values:
+    ACADIA_TF_T_FLTED: 86
+  response: 7EA0462295A7E
+- expected_values:
+    ACADIA_TF_T_FLTED: 87
+  response: 7EA0462295A7F

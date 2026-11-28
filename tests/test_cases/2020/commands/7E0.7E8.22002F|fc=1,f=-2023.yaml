@@ -1,11 +1,8 @@
 command_id: 7E0.7E8.22002F|fc=1,f=-2023
 test_cases:
 - expected_values:
-    ACADIA_FLI: 90.19608
-  response: 7E80462002FE6
+    ACADIA_FLI: 80.78431
+  response: 7E80462002FCE
 - expected_values:
-    ACADIA_FLI: 90.98039
-  response: 7E80462002FE8
-- expected_values:
-    ACADIA_FLI: 91.76471
-  response: 7E80462002FEA
+    ACADIA_FLI: 92.54902
+  response: 7E80462002FEC

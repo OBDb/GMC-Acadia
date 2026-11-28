@@ -4,8 +4,29 @@ test_cases:
     ACADIA_EOP_2: -0.6
   response: 7E80462115C23
 - expected_values:
+    ACADIA_EOP_2: 18
+  response: 7E80462115C42
+- expected_values:
+    ACADIA_EOP_2: 18.6
+  response: 7E80462115C43
+- expected_values:
+    ACADIA_EOP_2: 19.2
+  response: 7E80462115C44
+- expected_values:
+    ACADIA_EOP_2: 21.6
+  response: 7E80462115C48
+- expected_values:
     ACADIA_EOP_2: 22.2
   response: 7E80462115C49
+- expected_values:
+    ACADIA_EOP_2: 22.8
+  response: 7E80462115C4A
+- expected_values:
+    ACADIA_EOP_2: 24.6
+  response: 7E80462115C4D
+- expected_values:
+    ACADIA_EOP_2: 25.2
+  response: 7E80462115C4E
 - expected_values:
     ACADIA_EOP_2: 28.8
   response: 7E80462115C54

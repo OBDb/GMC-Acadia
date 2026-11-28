@@ -4,8 +4,5 @@ test_cases:
     ACADIA_ATF_T_VAR_1: 64
   response: '7E80462194068'
 - expected_values:
-    ACADIA_ATF_T_VAR_1: 65
-  response: '7E80462194069'
-- expected_values:
-    ACADIA_ATF_T_VAR_1: 66
-  response: 7E8046219406A
+    ACADIA_ATF_T_VAR_1: 88
+  response: '7E80462194080'

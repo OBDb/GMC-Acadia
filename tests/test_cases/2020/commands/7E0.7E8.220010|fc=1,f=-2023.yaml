@@ -4,5 +4,26 @@ test_cases:
     ACADIA_MAF: 0
   response: '7E8056200100000'
 - expected_values:
+    ACADIA_MAF: 3.07
+  response: '7E8056200100133'
+- expected_values:
+    ACADIA_MAF: 3.53
+  response: '7E8056200100161'
+- expected_values:
+    ACADIA_MAF: 3.84
+  response: '7E8056200100180'
+- expected_values:
+    ACADIA_MAF: 4.41
+  response: 7E80562001001B9
+- expected_values:
     ACADIA_MAF: 4.43
   response: 7E80562001001BB
+- expected_values:
+    ACADIA_MAF: 8.35
+  response: '7E8056200100343'
+- expected_values:
+    ACADIA_MAF: 15.68
+  response: '7E8056200100620'
+- expected_values:
+    ACADIA_MAF: 18.77
+  response: '7E8056200100755'
