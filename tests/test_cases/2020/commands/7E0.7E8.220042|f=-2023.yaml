@@ -4,8 +4,8 @@ test_cases:
     ACADIA_M_CTRL_MODULE_V: 0
   response: '7E8056200420000'
 - expected_values:
-    ACADIA_M_CTRL_MODULE_V: 13.377
-  response: '7E8056200423441'
+    ACADIA_M_CTRL_MODULE_V: 13.935
+  response: 7E805620042366F
 - expected_values:
-    ACADIA_M_CTRL_MODULE_V: 13.642
-  response: 7E805620042354A
+    ACADIA_M_CTRL_MODULE_V: 14.013
+  response: 7E80562004236BD

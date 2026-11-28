@@ -4,5 +4,8 @@ test_cases:
     ACADIA_TOTAL_MISFIRE: 0
   response: '7E80462120000'
 - expected_values:
+    ACADIA_TOTAL_MISFIRE: 4
+  response: '7E80462120004'
+- expected_values:
     ACADIA_TOTAL_MISFIRE: 6
   response: '7E80462120006'

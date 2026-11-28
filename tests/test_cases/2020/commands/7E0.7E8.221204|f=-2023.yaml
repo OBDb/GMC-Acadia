@@ -6,3 +6,6 @@ test_cases:
 - expected_values:
     ACADIA_MIS_HISTORY_4: 1
   response: '7E8056212040001'
+- expected_values:
+    ACADIA_MIS_HISTORY_4: 3
+  response: '7E8056212040003'

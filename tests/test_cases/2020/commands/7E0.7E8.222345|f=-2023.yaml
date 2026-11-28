@@ -7,5 +7,23 @@ test_cases:
     ACADIA_EOP: 140
   response: '7E80462234523'
 - expected_values:
+    ACADIA_EOP: 148
+  response: '7E80462234525'
+- expected_values:
+    ACADIA_EOP: 160
+  response: '7E80462234528'
+- expected_values:
+    ACADIA_EOP: 164
+  response: '7E80462234529'
+- expected_values:
+    ACADIA_EOP: 184
+  response: 7E8046223452E
+- expected_values:
     ACADIA_EOP: 188
   response: 7E8046223452F
+- expected_values:
+    ACADIA_EOP: 192
+  response: '7E80462234530'
+- expected_values:
+    ACADIA_EOP: 196
+  response: '7E80462234531'

@@ -4,8 +4,26 @@ test_cases:
     ACADIA_TC_SLIP_VSS: 0
   response: 7EA056219910000
 - expected_values:
+    ACADIA_TC_SLIP_VSS: 12.625
+  response: 7EA056219910065
+- expected_values:
+    ACADIA_TC_SLIP_VSS: 24.25
+  response: 7EA0562199100C2
+- expected_values:
     ACADIA_TC_SLIP_VSS: 37.75
   response: 7EA05621991012E
+- expected_values:
+    ACADIA_TC_SLIP_VSS: 69.375
+  response: 7EA05621991022B
+- expected_values:
+    ACADIA_TC_SLIP_VSS: 105.875
+  response: 7EA05621991034F
+- expected_values:
+    ACADIA_TC_SLIP_VSS: 111.375
+  response: 7EA05621991037B
+- expected_values:
+    ACADIA_TC_SLIP_VSS: -284.125
+  response: 7EA05621991F71F
 - expected_values:
     ACADIA_TC_SLIP_VSS: -3.625
   response: 7EA05621991FFE3

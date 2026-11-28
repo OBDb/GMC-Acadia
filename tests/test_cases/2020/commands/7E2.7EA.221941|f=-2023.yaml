@@ -4,11 +4,8 @@ test_cases:
     ACADIA_TRANS_ISS: 0
   response: 7EA056219410000
 - expected_values:
-    ACADIA_TRANS_ISS: 58
-  response: 7EA0562194100E8
+    ACADIA_TRANS_ISS: 1789.5
+  response: 7EA056219411BF6
 - expected_values:
-    ACADIA_TRANS_ISS: 139.25
-  response: 7EA05621941022D
-- expected_values:
-    ACADIA_TRANS_ISS: 1583.75
-  response: 7EA0562194118BF
+    ACADIA_TRANS_ISS: 3623.5
+  response: 7EA05621941389E

@@ -4,8 +4,26 @@ test_cases:
     ACADIA_EOP_ABS: 92
   response: '7E80462234417'
 - expected_values:
+    ACADIA_EOP_ABS: 232
+  response: 7E8046223443A
+- expected_values:
+    ACADIA_EOP_ABS: 236
+  response: 7E8046223443B
+- expected_values:
+    ACADIA_EOP_ABS: 248
+  response: 7E8046223443E
+- expected_values:
     ACADIA_EOP_ABS: 260
   response: '7E80462234441'
 - expected_values:
+    ACADIA_EOP_ABS: 280
+  response: '7E80462234446'
+- expected_values:
+    ACADIA_EOP_ABS: 284
+  response: '7E80462234447'
+- expected_values:
     ACADIA_EOP_ABS: 288
   response: '7E80462234448'
+- expected_values:
+    ACADIA_EOP_ABS: 292
+  response: '7E80462234449'
