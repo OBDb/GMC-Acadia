@@ -1,0 +1,14 @@
+command_id: 7E2.7EA.221941|f=-2023
+test_cases:
+- expected_values:
+    ACADIA_TRANS_ISS: 0
+  response: 7EA056219410000
+- expected_values:
+    ACADIA_TRANS_ISS: 58
+  response: 7EA0562194100E8
+- expected_values:
+    ACADIA_TRANS_ISS: 139.25
+  response: 7EA05621941022D
+- expected_values:
+    ACADIA_TRANS_ISS: 1583.75
+  response: 7EA0562194118BF

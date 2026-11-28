@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.221154|f=-2023
+test_cases:
+- expected_values:
+    ACADIA_EOT_CALC: 58
+  response: '7E80462115462'
+- expected_values:
+    ACADIA_EOT_CALC: 72
+  response: '7E80462115470'
+- expected_values:
+    ACADIA_EOT_CALC: 73
+  response: '7E80462115471'
+- expected_values:
+    ACADIA_EOT_CALC: 74
+  response: '7E80462115472'

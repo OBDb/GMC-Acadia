@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.223812|f=-2023
+test_cases:
+- expected_values:
+    ACADIA_COOLING_FAN_CMD: 0
+  response: '7E80462381200'
